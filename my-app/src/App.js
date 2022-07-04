@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn to deploy with Netlify
+          Learn to deploy with Netlify123
         </a>
       </header>
     </div>
