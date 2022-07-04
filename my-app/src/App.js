@@ -1,6 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
+const fetchInfo= async ()=>{
+  const response = await fetch(POKEMON_API);
+  const data=response.json();
+  console.log(data)
+}
+
+fetchInfo();
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +24,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn to deploy with Netlify456
+          {"data"}
         </a>
       </header>
     </div>
