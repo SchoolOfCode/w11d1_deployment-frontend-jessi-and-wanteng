@@ -1,15 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react';
 
-const fetchInfo= async ()=>{
-  const response = await fetch(POKEMON_API);
-  const data=response.json();
-  console.log(data)
-}
 
-fetchInfo();
+
+
+
+
 
 function App() {
+
+  const [pokemon,setPokemon]=useState("")
+  const fetchInfo= async ()=>{
+    fetch('process.env.POKEMON_API')
+    .then(response => response.json())
+    .then(data => setPokemon(data.name))
+    ;
+  }
+
+  fetchInfo();
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +26,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>{pokemon}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -24,7 +34,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn to deploy with Netlify456
-          {"data"}
+          
         </a>
       </header>
     </div>
