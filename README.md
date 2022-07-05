@@ -6,10 +6,20 @@
  
 Practice taking turns to explain the answers to these questions:
  - What is Netlify?
+
+    Ans: Netifly is a platform for automating modern web projects. It can replace hosting infrastructure,deploy pipeline as well as integrate dynamic functionality likeuser authentication, and form handling as project grow.
  - What problems does Netlify solve?
+
+    Ans: It deploy the result whenever we push to github which help to streamline the process. We can use Netifly builtin forms without making extra Api calls or extra javascript in our code. 
  - When would you use it?
+
+    Ans: whenever we wwant to deploy our app/website
  - When would you not use it?
+    
+    Ans: netifly focus more on teh front end so when we have a aproject with mostly backend, other web hosting platform would be better. 
  - What are some alternatives/competitors to Netlify? (Just to know what else is out there.)
+
+    Ans: Surge, Heroku, GitHub Pages, CloudFlare, and Firebase are the most popular alternatives and competitors to Netlify.
 
 2. Initialise your React app with Create React App. 
  - It can just be the standard "Hello World" boilerplate.
